@@ -6,12 +6,10 @@ tpch/*.parquet
 tpch/*.tbl
 tpch/*.join
 tpch/*.metastore
-tpch/dbgen
 tpcds/tmp/*
 tpcds/*.parquet
 tpcds/*.dat
 tpch/tmp/data/*
-tpch/qgen
 tpch/tbl_csv/*
 
 *.jfr
