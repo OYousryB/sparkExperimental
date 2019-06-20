@@ -8,8 +8,6 @@ do
 
     mkdir -p $EXP_HOME/logs/gen/$BENCHMARK
 
-    TBL_DIR=$OUTPUT/tbl
-
       echo "Shutting down Spark"
       $SPARK_HOME/sbin/stop-master.sh >> $EXP_HOME/logs/run-$BENCHMARK.out
       $SPARK_HOME/sbin/stop-slave.sh >> $EXP_HOME/logs/run-$BENCHMARK.out
