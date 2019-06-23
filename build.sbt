@@ -1,10 +1,10 @@
-
-name := "sparkExperimental"
-
-version := "0.1"
-
-scalaVersion := "2.11.8"
-
+lazy val root = (project in file(".")).
+  settings(
+    name := "Xpt",
+    version := "1.0",
+    scalaVersion := "2.11.8",
+    mainClass in Compile := Some("benchmark.tpch.run.QueryTest")
+  )
 
 libraryDependencies += "org.apache.spark" %% "spark-core" % "2.4.0"
 
