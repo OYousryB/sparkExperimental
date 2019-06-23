@@ -14,7 +14,7 @@ class VanillaTpchSchemaProvider(inputDir: String) extends TpchSchemaProvider {
 
     "region" -> SparkCtx.spark.read.parquet(inputDir + "/region"),
 
-    "order" -> SparkCtx.spark.read.parquet(inputDir + "/order"),
+    "orders" -> SparkCtx.spark.read.parquet(inputDir + "/order"),
 
     "part" -> SparkCtx.spark.read.parquet(inputDir + "/part"),
 
