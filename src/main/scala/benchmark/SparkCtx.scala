@@ -8,7 +8,7 @@ object SparkCtx {
   private var sparkSession: SparkSession = _
 
   private def createSparkContext = {
-    val conf = new SparkConf().setAppName("project-hermes")
+    val conf = new SparkConf().setAppName("Spark Xpt")
     sparkContext = {
         if (!conf.contains("spark.master")) {
           System.err.println(("\n" + "#"*80)*2)
