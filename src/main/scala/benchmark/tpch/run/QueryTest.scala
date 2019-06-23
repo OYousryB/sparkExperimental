@@ -24,7 +24,7 @@ object QueryTest {
       if (args.length > 2) Seq(args(2).toInt)
       else 1 to 22
 
-    val source = new FileInputStream()("src/main/scala/benchmark/tpch/run/queries/tpch_sql_queries_raw.txt")
+    val source = new FileInputStream("src/main/scala/benchmark/tpch/run/queries/tpch_sql_queries_raw.txt")
     val buf = new Array[Byte](source.available())
     source.read(buf)
     val queryText = new String(buf).split('\n')
