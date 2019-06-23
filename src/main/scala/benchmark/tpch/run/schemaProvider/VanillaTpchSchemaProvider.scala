@@ -14,7 +14,7 @@ class VanillaTpchSchemaProvider(inputDir: String) extends TpchSchemaProvider {
 
     "region" -> SparkCtx.spark.read.parquet(inputDir + "/region"),
 
-    "orders" -> SparkCtx.spark.read.parquet(inputDir + "/order"),
+    "order" -> SparkCtx.spark.read.parquet(inputDir + "/order"),
 
     "part" -> SparkCtx.spark.read.parquet(inputDir + "/part"),
 
@@ -23,5 +23,5 @@ class VanillaTpchSchemaProvider(inputDir: String) extends TpchSchemaProvider {
     "supplier" -> SparkCtx.spark.read.parquet(inputDir + "/supplier")
   )
 
-  dfMap.foreach(x => x._2.createOrReplaceTempView(x._1))
+//  dfMap.foreach(x => x._2.createOrReplaceTempView(x._1))
 }
